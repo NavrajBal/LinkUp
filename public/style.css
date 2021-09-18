@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif; 
+  background-image: url("https://wallpaperaccess.com/full/869905.gif"); 
+}
+#video-grid {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+} 
+video {
+  display: block;
+  flex: 1;
+  object-fit: cover;
+
+  max-width: 600px;
+}
+h6 { 
+  font-size: 24px;
+}
+.main {
+  height: 100%;
+  display: flex;
+}
+.left {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column; 
+  /* opacity: 0.8;  */
+  padding: 8px;
+}
+.right {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  background-color: #170055;
+  opacity: 0.8; 
+ 
+
+ margin-bottom: 8px; 
+ margin-right: 8px; 
+ margin-top: 8px;
+  
+} 
+.li { 
+  font-size: 14px;
+}
+.videos {
+  flex-grow: 1;
+  /* background-color: pin; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainControls {
+  display: flex;
+  background-color: #170055;
+  color: #d2d2d2;
+  padding: 5px;
+  justify-content: space-between;
+}
+.mainControlsBlock {
+  display: flex;
+}
+.mainControlsButton {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  margin: 5px;
+}
+.mainControlsButton span {
+  margin-top: 10px;
+  display: block;
+}
+.mainControlsButton:hover {
+  background-color: #CAB8FF;
+}
+.mainControlsButton i {
+  font-size: 25px;
+}
+
+.header {
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #4B3869; 
+}
+.main__chat__window {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 20px 20px 0 20px;
+}
+.main__message_container {
+  padding: 22px 11px;
+  display: flex;
+}
+.main__message_container input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  user-select: none;
+  outline: none;
+}
+.corner {
+  border-radius: 25px;
+
+}
+#all_messages li {
+  color: #fff;
+  list-style: none;
+  border-bottom: 1px solid #3d3d42;
+  padding: 10px 0; 
+  font-size: 18px;
+}
+.unmute {
+  color: red;
+} 
+.btn-dark {
+    background-color: #4B3869;
+}  
+.purplething { 
+  opacity: 0.8; 
+  color: #170055;
+}
+.gamediv { 
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto; 
+  padding: 12px;
+}
+

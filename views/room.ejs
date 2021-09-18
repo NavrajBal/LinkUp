@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.3.1/peerjs.min.js.map"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+    </script>
+  </head>
+  <body> 
+
+    
+
+
+  <nav class="navbar navbar-dark " style="position: absolute;">
+      <span style="font-size: 24px; padding-left: 8px;" class="navbar-brand mb-0 h1">LinkUp </span>
+    </nav>
+
+
+    <div class="main">
+
+
+
+      <div class="left">
+
+        <div class="videos">
+          <div id="video-grid"></div>
+        </div>
+
+
+        <div class="mainControls corner" style="opacity: 0.8">
+          <div class="mainControlsBlock">
+            <div
+              class="btn btn-dark mainControlsButton" 
+              type="button" 
+              id="muteButton"
+              onclick="muteUnmute()"
+            >
+              <i class="fa fa-microphone"></i>
+              <span>Mute</span>
+            </div>
+            <div
+              class="mainControlsButton btn btn-dark" 
+              type="button" 
+              id="playPauseVideo"
+              onclick="playStop()"
+            >
+              <i class="fa fa-video-camera"></i>
+              <span>Pause Video</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="right corner">
+        <div class="header">
+          <h6>Chat</h6>
+        </div>
+        <div class="main__chat__window" id="main__chat__window">
+          <ul class="messages" id="all_messages"></ul>
+        </div>
+        <div class="main__message_container">
+          <input
+            type="text"
+            id="chat_message"
+            placeholder="Type message here ;)"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
