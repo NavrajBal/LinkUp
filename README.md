@@ -1,3 +1,2 @@
-# Link up 
-## All the code for the LinkUp meets webpage 
+# Link Up 
 ![Drag Racing](Logo2.png)
